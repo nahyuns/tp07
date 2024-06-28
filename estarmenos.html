@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>estarmenos</title>
     <style>
-        .encabezado {
-            background: ;
-            background: ;
-            color: ;
+        .conteiner {
+           justify-content: center;
+           border: 10px solid transparent;
+        }
+  
+        .box {
+            display: flex;
+            justify-content: space-between;
+            background: rgb(108, 0, 167);
+            background: linear-gradient(90deg, rgba(108, 0, 167, 1) 0%, rgba(154, 22, 187, 1) 0%, rgba(203, 0, 255, 1) 64%, rgba(51, 15, 121, 1) 87%);
+        }
+
+        .boton {
+            justify-content: right;
+            align-items: baseline;
+            margin-top: 15px;
+            margin-left: 10px;
+            background-color: transparent;
+            color: white;
+            border: 3px solid black;
+        }
+
+        .titu {
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .promo {
+            display: flex;
+            align-content: center;
+        }
+
+        span {
+           text-decoration: line-through;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
@@ -17,14 +53,36 @@
     <header>
 
     </header>
-     <main class="container">
-            <div class="box">
-                <img src="blue-ok1-3981bf93239f4efbe616455423206961-480-0.png" width="100" alt="">
-                <h3>Johnnie Walker Blue Label 750ml</h3>
-                <p>9º en Whiskies Johnnie Walker.</p>
-                <p>$369.990</p>
-                <a href="#">¡Comprelo aki!</a>
+    <div class="container">
+        <div class="box">
+            <div>
+                <p class="titu">Suscribite al nivel 6 <span>$10.008</span> $3.999/mes</p>
             </div>
-    </main>
+            <div> <!--suscribirse-->
+                <button class="boton">Suscribite</button>
+            </div>
+        </div>
+        <div class="box2">
+            <div>
+                <p>Conseguí los mejores benificios en Mercado Libre</p>
+            </div>
+            <div class="logos">
+                <div class="promo">
+                    <img src="disney.webp" width="70">
+                    <p>Disney+ sin cargo</p>
+                </div>
+                <div class="promo">
+                    <img src="Star_MZ.jpg" width="70">
+                    <p>Star+ sin cargo</p>
+                </div>
+                <div class="promo">
+                    <img src="enviado.png" width="70">
+                    <p>Envíos gratis y rápidos desde $23.000 y <br>
+                         45% OFF en envíos de menos de $23.000</p>
+                </div>
+            </div>
+        </div>
+        </main>
 </body>
+
 </html>
